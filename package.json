@@ -1,0 +1,40 @@
+{
+  "name": "pm3",
+  "version": "1.0.0",
+  "description": "Sistema de gerenciamento de projetos para auxílio educacional ou profissional",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "dev": "tsnd --inspect --transpile-only --respawn src/index.ts",
+    "start": "tsc && dist/index.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Lucas Bogos",
+  "license": "ISC",
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^10.1.0",
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/morgan": "^1.9.4",
+    "@types/node": "^18.15.11",
+    "prisma": "^4.12.0",
+    "prisma-erd-generator": "^1.5.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.2",
+    "vitest": "^0.29.8"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0"
+  },
+  "prisma": {
+    "schema": "src/infrastructure/prisma/schema.prisma"
+  }
+}
